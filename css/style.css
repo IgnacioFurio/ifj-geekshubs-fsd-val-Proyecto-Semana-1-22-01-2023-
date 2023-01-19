@@ -13,8 +13,7 @@ div{
 #logo{
     display: flex;
     padding-left: 10vw;
-    display: flex;
-    align-content: center;
+    box-sizing: content-box;
 }
 .nintendo-b{
     color: white;
@@ -34,26 +33,53 @@ div{
 /* FIN head */
 
 /* INICIO cuerpo de la web*/
+/* colocación carcasa */
 #cuerpo{
     height: 85vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* laterales en blanco body  */
-.l-r-space{
-    width: 45vw;
+/* tamaño carcasa */
+#size-gbc{
+    height: 500px;
+    width: 300px;
+    background-color: rgb(40, 250, 50);
+    color: rgb(5, 5, 5);
 }
-/* ancho GBC */
-#width-gbc{
-    width: 55vw;
+/* comm */
+#comm{
+    height: 4%;
+    display: flex;
 }
-/* arriba y abajo en blanco body  */
-.t-b-space{
+#infrared{
+    width: 20%;
+    background-color: aquamarine;
+}
+/* screen  */
+#screen{
+    height: 46%;
+    display: flex;
+}
+.margin-scr{
+    width: 6%;
+}
+#screen-blck{
+    width: 94%;
+    background-color: black;
+}
+/* logo central */
+#logo-2{
     height: 10%;
 }
-/* alto GBC  */
-#height-gbc{
-    height: 80%;
-    background-color: rgb(46, 224, 46);
+/* pad de controles */
+#control-pad{
+    height: 15%;
+    background-color: red;
+}
+/* botones de select start y altavoces */
+#menu-buttons{
+    height: 25%;
 }
 
 /* FIN cuerpo de la web */
