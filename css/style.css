@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+}
+
+/* INICIO head */
+#head{
+    height: 10vh;
+    background-color: red;
+}
+#logo{
+    display: flex;
+    padding-left: 20vw;
+    display: flex;
+    align-content: center;
+}
+.nintendo-b{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 0;
+    border: 1vh solid white;
+    border-radius: 5%;
+}
+/* FIN head */
+
+/* INICIO cuerpo de la GBC */
+#cuerpo{
+    height: 85vh;
+}
+/* FIN cuerpo de la GBC */
+/* INICIO info */
+#info{
+    height: 5vh;
+    background-color: red;
+}
+/* FIN info */
