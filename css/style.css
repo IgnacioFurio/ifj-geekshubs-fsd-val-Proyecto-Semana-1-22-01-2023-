@@ -75,7 +75,40 @@ div{
 /* pad de controles */
 #control-pad{
     height: 15%;
-    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+/* pad de movimiento  */
+#pad-mov{
+    width: 42%;
+    display: flex;
+    justify-content: left;
+}
+#pad-arrows{
+    width: 60%;
+    background-color: black;
+}
+/* botones A y B  */
+#AB-bttn{
+    width: 42%;
+    color: grey;
+    display: flex;
+    justify-content: right;
+}
+#B-bttn{
+    width: 25%;
+    padding-top: 25%;
+    margin-right: 10%;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+
+}
+#A-bttn{
+    width: 25%;
+    padding-top: 15%;
+    background-color: black;
+    text-align: center;
+
 }
 /* botones de select start y altavoces */
 #menu-buttons{
