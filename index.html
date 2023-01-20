@@ -17,25 +17,35 @@
     <!-- FIN head -->
     <!-- INICIO cuerpo de la web -->
     <div id="cuerpo">
+        <div id="relieve">
+            <div id="rel-comm"></div>
+            <div id="rel-scrn"></div>
+            <div id="rel-pad"></div>
+        </div>
         <!-- carcasa gbc 13,35cm x 7,8 cm -->
         <div id="size-gbc">
             <!-- triangulo infrarrojos y letras 'comm' -->
-            <div id="comm">
-                <div id="infrared"></div>
+            <div id="comm" class="gbc">
+                <div id="infrared">
+                    <div id="ir-empty"></div>
+                    <div id="ir-triangle-cont">
+                        <div id="ir-triangle"></div>
+                    </div>
+                </div>
                 <div class="gba-font-g">COMM</div>
             </div>
             <!-- pantalla con margen negro  -->
-            <div id="screen">
+            <div id="screen" class="gbc">
                 <div class="margin-scr"></div>
                 <div id="screen-blck"></div>
                 <div class="margin-scr"></div>
             </div>
             <!-- logo en la consola  -->
-            <div id="logo-2">
+            <div id="logo-2" class="gbc">
                 <p id= "nintendo2" class="gba-font-g">nintendo<sup id="trademark">&reg;</sup></p>
             </div>
             <!-- pad de movimiento y botones A y B -->
-            <div id="control-pad">
+            <div id="control-pad" class="gbc">
                 <!-- pad de movimiento  -->
                 <div id="pad-mov">
                     <div id="pad-arrows">
@@ -54,12 +64,16 @@
                 </div>
             </div>
             <!-- altavoces y botones select y start  -->
-            <div id="bottom-side">
-                <!-- INICIO botones select y start  -->
-
-                <!-- FIN botones inicio y start  -->
+            <!-- INICIO botones select y start  -->
+            <div id="bottom-side" class="gbc">
+                
             </div>
+            <!-- FIN botones inicio y start  -->
+            <!-- INICIO curva de abajo -->
+            <div id="bottom-curve" class="gbc"></div>
+            <!-- FIN curva de abajo  -->
         </div>
+
     </div>
     <!-- FINAL cuerpo de la web -->
     <!-- INICIO info -->

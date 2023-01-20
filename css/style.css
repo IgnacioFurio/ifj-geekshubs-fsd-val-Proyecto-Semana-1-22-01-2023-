@@ -59,13 +59,34 @@ div{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 /* tamaño carcasa */
 #size-gbc{
     height: 500px;
     width: 300px;
+    position: absolute; top;
+}
+.gbc{
     background-color: rgb(40, 250, 50);
-    color: rgb(5, 5, 5);
+}
+
+/* relieve carcasa */
+#relieve{
+    height: 500px;
+    width: 192px;
+    position: absolute; 
+}
+#rel-comm{
+    height: 4%;
+    background-color: aqua;
+}
+#rel-scrn{
+height: 46%;
+}
+#rel-pad{
+    height: 15%;
+background-color: aqua;
 }
 /* comm */
 #comm{
@@ -73,11 +94,32 @@ div{
     display: flex;
     font-size: smaller;
     align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #infrared{
     width: 20%;
-    background-color: aquamarine;
+    height: 100%;
+    text-align: right;
+    display: flex;
+}
+#ir-empty{
+    width: 80%;
+}
+#ir-triangle-cont{
+    color: transparent;
+    width: 20%;
+    display: flex;
+    align-items: center;
+
+}
+#ir-triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 10px outset rgb(32, 201, 41);
+    border-left: 5px outset transparent;
+    border-right: 5px outset transparent;
 }
 /* screen  */
 #screen{
@@ -172,12 +214,15 @@ div{
 
 /* botones de select start y altavoces */
 #bottom-side{
-    height: 25%;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-template-rows: repeat(4, 1fr);
+    height: 15%;
 }
 
+/* curva de abajo */
+#bottom-curve{
+    height: 10%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+}
 
 /* FIN cuerpo de la web */
 /* INICIO info */
