@@ -1,26 +1,26 @@
 body{
     margin: 0;
 }
-div{
-    display: block;
+.gba-font{
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+    font-weight: bold;
 }
-.gba-font-g{
+.g{
     color: rgb(32, 201, 41);
-    font-family: Arial, Helvetica, sans-serif;
-    font-stretch: extra-condensed;
-    font-weight: bold;
-
 }
-.gba-font-b{
-    color: rgb(60, 61, 61);
-    font-family: Arial, Helvetica, sans-serif;
-    font-stretch: extra-condensed;
-    font-weight: bold;
+.b{
+    text-shadow: 1px 1px 1px rgb(255 255 255 / 30%),
+    -1px -1px 1.2px rgb(1 1 1 / 30%);
+    color: rgb(32, 32, 32);
 }
 .bttn-txt-center{
     font-size:x-small;
     display: flex;
     justify-content: center;
+}
+.text-sha{
+    text-shadow: 1px;
 }
 
 /* INICIO head */
@@ -47,9 +47,6 @@ div{
     border: 3px solid white;
     border-radius: 20px;
 }
-.trademark{
-    font-size: xx-small;
-}
 /* FIN head */
 
 /* INICIO cuerpo de la web*/
@@ -65,28 +62,34 @@ div{
 #size-gbc{
     height: 500px;
     width: 300px;
-    position: absolute; top;
-}
-.gbc{
-    background-color: rgb(40, 250, 50);
+    border-radius: 20px 20px 49% 49% / 20px 20px 6.5% 6.5%;
+    position: absolute;
+    background-image: radial-gradient( rgb(39, 148, 44)0% 10%, rgb(40, 250, 50));
 }
 
 /* relieve carcasa */
 #relieve{
     height: 500px;
-    width: 192px;
+    width: 210px;
+    align-items: flex-start;
     position: absolute; 
 }
-#rel-comm{
-    height: 4%;
-    background-color: aqua;
+#resaltado{
+    height: 90%;
+    background-color: rgb(40, 250, 50);
+    border-radius: 0px 0px 49% 49% / 0% 0% 6.5% 6.5%;
 }
-#rel-scrn{
-height: 46%;
+#borde-inf{
+    height: 10%;
+    background-color: transparent;
 }
-#rel-pad{
-    height: 15%;
-background-color: aqua;
+
+/* INICIO elementos carcasa  */
+#elements{
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    background-color: transparent;
 }
 /* comm */
 #comm{
@@ -94,10 +97,7 @@ background-color: aqua;
     display: flex;
     font-size: smaller;
     align-items: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
-
 #infrared{
     width: 20%;
     height: 100%;
@@ -214,15 +214,13 @@ background-color: aqua;
 
 /* botones de select start y altavoces */
 #bottom-side{
-    height: 15%;
-}
-
-/* curva de abajo */
-#bottom-curve{
-    height: 10%;
+    height: 20%;
     border-bottom-left-radius: 60%;
     border-bottom-right-radius: 60%;
 }
+
+/* curva de abajo */
+
 
 /* FIN cuerpo de la web */
 /* INICIO info */
