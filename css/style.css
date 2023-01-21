@@ -145,6 +145,7 @@ body{
 }
 #b-scrn{
     height: 25%;
+    text-align: center;
 }
 .margin-m-scrn{
     width: 20%;
@@ -165,7 +166,7 @@ body{
     display: block;
     border: 2px inset rgb(121, 6, 6);
     border-radius: 50% / 50%;
-    background-image: radial-gradient(rgb(255, 0, 0), rgb(165, 5, 5), rgb(82, 4, 4));
+    background-image: radial-gradient(rgb(255, 86, 86), rgb(165, 5, 5), rgb(82, 4, 4));
 }
 #light-pwr-r{
     width: 70%;
@@ -214,17 +215,97 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
-#t-b{
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
+.display-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#l-r{
-    grid-column: 1/ 4;
+    /* formato de colores al pad */
+        /* arriba */
+        #p-a-t{
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-left: 3px outset rgb(63, 62, 62);
+            border-top: 3px outset rgb(63, 62, 62);
+            border-right: 3px outset rgb(63, 62, 62);
+        }
+            #top-arrow{
+                width: 0;
+                height: 0;
+                border-bottom: 10px outset rgb(104, 102, 102);
+                border-left: 5px outset transparent;
+                border-right: 5px outset transparent;
+            }
+
+        /* derecha  */
+        #p-a-r{
+            grid-column: 3/ 4;
+            grid-row: 2 / 3;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top: 3px outset rgb(63, 62, 62);
+            border-right: 3px outset rgb(63, 62, 62);
+            border-bottom: 3px outset rgb(63, 62, 62);
+        }
+            #right-arrow{
+                width: 0;
+                height: 0;
+                border-left: 10px outset rgb(44, 44, 44);
+                border-top: 5px outset transparent;
+                border-bottom: 5px outset transparent;
+            }
+
+            /* abajo  */
+        #p-a-b{
+            grid-column: 2/ 3;
+            grid-row: 3 / 4;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-left: 3px outset rgb(63, 62, 62);
+            border-right: 3px outset rgb(63, 62, 62);
+            border-bottom: 3px outset rgb(63, 62, 62);
+        }
+        #bottom-arrow{
+            width: 0;
+            height: 0;
+            border-top: 10px outset rgb(34, 33, 33);
+            border-right: 5px outset transparent;
+            border-left: 5px outset transparent;
+        }
+
+        /* izquierda  */
+        #p-a-l{
+            grid-column: 1/ 2;
+            grid-row: 2 / 3;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-left: 3px outset rgb(63, 62, 62);
+            border-top: 3px outset rgb(63, 62, 62);
+            border-bottom: 3px outset rgb(63, 62, 62);
+        }
+        #left-arrow{
+            width: 0;
+            height: 0;
+            border-right: 10px outset rgb(116, 114, 114);
+            border-top: 5px outset transparent;
+            border-bottom: 5px outset transparent;
+        }
+#p-a-c{
+    grid-column: 2/ 3;
     grid-row: 2 / 3;
+    background: radial-gradient( at 9% 60%, black, rgb(34, 34, 34) 70%, rgb(48, 48, 48) 70%);
+}
+    #central-detail{
+    height: 80%;
+    width: 80%;
+    background: radial-gradient( at 10% 30%, black, rgb(87, 86, 86) 90%, rgb(90, 89, 89) 70%);
+    border: inset rgba(68, 68, 68, 0.397);
+    border-radius: 20px;
 }
 .arr-mv{
-    background-color: black;
-    color: white;
+    background-image: linear-gradient(to bottom right, rgb(90, 89, 89) 0% 10%, rgb(87, 86, 86) 10% 30%, black );
 }
 /* botones A y B  */
 #AB-bttn{
@@ -260,18 +341,101 @@ body{
 
 /* botones de select start y altavoces */
 #bottom-side{
-    height: 20%;
-    border-bottom-left-radius: 60%;
-    border-bottom-right-radius: 60%;
+    height: 25%;
+    display: flex;
 }
 
-/* curva de abajo */
+    .bs-lat{
+        width: 33%;
+    }
+    #bs-mid{
+        width: 34%;
+        display: flex;
+        justify-content: space-evenly;
+    }
 
+    /* boton select  */
+    #slct{
+        width: ¡40%;
+    }
+        #slct-bttn{
+            height: 40%;
+            display: flex;
+            justify-content: center;
+        }
+        .s-b-lat{
+            width: 5%;
+        }
+        #s-b-bttn{
+            width: 90%;
+        }
 
+        #slct-txt{
+            font-size: xx-small;
+            text-align: center;
+        }
+
+    /* start */
+    #strt{
+        width: 40%;
+    }
+        #strt-bttn{
+            height: 40%;
+            display: flex;
+            justify-content: center;
+        }
+
+            .s-b-lat{
+                width: 20%;
+            }
+            .s-b-bttn{
+                width: 80%;
+            }
+
+        #strt-txt{
+            font-size: xx-small;
+            text-align: center;
+        }
+
+        /* botones fisicos select start  */
+        .s-b-b-t-empty{
+            height: 65%;
+            display: block;
+        }
+        .s-b-b-buttn{
+            height: 10%;
+            border: 3px outset rgb(63, 62, 62);
+            border-radius: 20px / 90%;
+            background: radial-gradient( at 90% 60%, black, rgb(87, 86, 86) 70%, rgb(90, 89, 89) 70%);
+        }
+        .s-b-b-b-empty{
+            height: 10%;
+        }
+    /* boton
+    /* speaker  */
+        #speaker-empty-top{
+            height: 15%;
+        }
+        #speaker-main{
+            height: 85%;
+            display: flex;
+            justify-content: right;
+        }
+            #s-m-wholes{
+                width: 100%;
+                text-align: center;
+            }
+                .s-wholes{
+                    margin: 0%;
+                    font-size: xx-large;
+                    color: rgb(25, 121, 25);
+                    rotate: -10deg;
+                }
 /* FIN cuerpo de la web */
 /* INICIO info */
 #info{
     height: 5vh;
     background-color: red;
 }
+
 /* FIN info */
