@@ -64,7 +64,7 @@ body{
     width: 300px;
     border-radius: 20px 20px 49% 49% / 20px 20px 6.5% 6.5%;
     position: absolute;
-    background-image: radial-gradient( rgb(39, 148, 44)0% 10%, rgb(40, 250, 50));
+    background-image: radial-gradient(at 90% 60%, rgb(36, 131, 41)0% 10%, rgb(28, 248, 39));
 }
 
 /* relieve carcasa */
@@ -76,7 +76,7 @@ body{
 }
 #resaltado{
     height: 90%;
-    background-color: rgb(40, 250, 50);
+    background-image: linear-gradient(to right bottom, rgb(22, 255, 14), rgb(23, 206, 32)) ;
     border-radius: 0px 0px 49% 49% / 0% 0% 6.5% 6.5%;
 }
 #borde-inf{
