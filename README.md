@@ -4,17 +4,19 @@
 2. [Technologies](#technologies)
 3. [FAQs](#faqs)
 
-### General Info
+## General Info
 ***
 Hello, my name is Ignacio, but some people call me 'Bicho' or even 'Eddieden', his is my first project for the Full-Stack Developer Bootcamp on GekksHubs Academy. They chgallenged us to draw a video game console of our choice using only layout tools. I chose the GameBoy Color because it was the first video game console that my parents gave me. Hope you like the results.
 
-### Screenshot
+## Screenshot
+
+|Web|Responsive|
+|-|-|
+|<image src="./assets/Overview.jpg" width= "650px" alt="Overview">|<image src="./assets/Overview_phone.jpg" width= "200px" alt="Overview phone">|
 
 
-(https://user-images.githubusercontent.com/24818021/213923018-31263f37-1ff9-41c7-8d22-5924648c4007.jpg)
 
-
-### Technologies
+## Technologies
 ***
 A list of technologies used within the project:
 * Windows 11: Version 22H2 
